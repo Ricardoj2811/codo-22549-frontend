@@ -8,18 +8,18 @@
 </head>
 <body>
     <h1>Formulario 1</h1>
-    <form action="">
+    <form action="registrar-formulario.html" method="POST">
         <label for="">Nombre:</label>
         <input type="text" 
             maxlength="20"
-            size="5">
+            size="5" name="nombre">
         <label for="">Password:</label>
         <input type="password" 
-            maxlength="4" size="4">
+            maxlength="4" size="4" name="password">
         <input type="submit" value="Enviar">
     </form>
 
-    <form action="">
+    <form action="registrar-formulario.html" method="GET">
         <h1>Formulario 2</h1>
         <ul>
             <li>
@@ -31,10 +31,42 @@
                 <input type="checkbox" value="Series">
             </li>
         </ul>  
-        <label for="">Opcion A</label>  
+        <label for="">Opción A</label>  
         <input type="radio" value="A" name="opciones">  
-        <label for="">Opcion B</label>  
+        <label for="">Opción B</label>  
         <input type="radio" value="B" name="opciones">
+    </form>
+    <form action="">
+        <table>
+            <tr>
+                <td>
+                    Nombre:
+                </td>
+                <td>
+                    <input type="text" name="nombre">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Fec. Nac:
+                </td>
+                <td>
+                    <input type="date" 
+                    name="FNacimiento"
+                    min="2022-08-16"
+                    max="2022-08-18"
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Edad:
+                </td>
+                <td>
+                    <input type="number" min="1" max="150" step="1" name="Edad">
+                </td>
+            </tr>
+        </table>
     </form>
     <hr>
     <a href="index.html">Volver a Index</a>
