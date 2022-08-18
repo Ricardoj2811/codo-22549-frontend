@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASE 6 CSS</title>
+    <!-- TERCERA FORMA, HOJA DE ESTILOS EXTERNA -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- PRIMERA FORMA DE USAR CSS -->
+    <style>
+        h1{
+            color: red;
+            font: size 40px;
+        }
+        
+        p{
+            color:green;
+            font-weight: bold;
+        }
+
+        .otraClase{
+            background-color:aqua;
+        }
+
+        section{
+            background-color:rgb(143, 143, 172);
+        }
+
+        #btn{
+            background-color:aqua;
+        }
+        .btn{
+            background-color:green;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section class="sectionPrincipal">
+            <!-- SEGUNDA FORMA DE USAR EL CSS, COMO ATRIBUTO DE LA ETIQUETA (Estilos en linea)-->
+            <h1 style="color:yellow">CSS</h1>
+            <h1 style="color:blue">OTROTITULO</h1>
+            <h2>SOY UN SUBTITULO</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et quidem quas veniam molestiae nostrum rerum, ab neque culpa expedita. Maxime aliquid, mollitia itaque id laboriosam repellendus fugit quos exercitationem doloremque!</p>
+        </section>
+        <section class="otraClase">
+            <h1>HOLA</h1>
+        </section>
+        <section>
+            <form action="alta.html"></form>
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" maxlength="50" required>
+            <button id="btn">Enviar</button>
+            <button class="btn">Enviar2</button>
+            <button class="btn">Enviar3</button>
+        </section>
+    </main>
+</body>
+</html>
