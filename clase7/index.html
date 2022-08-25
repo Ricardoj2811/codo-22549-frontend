@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 7</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dongle:wght@300;400;700&family=Montserrat:wght@400;600;800&family=Open+Sans:wght@300;500;600;700&family=Roboto:ital,wght@0,100;0,700;1,400&display=swap"
+        rel="stylesheet">
+        <style>
+            /* Atributo exacto, igual */
+            [id="JSId"]{
+                color: white;
+                text-transform: uppercase; /*/lwercase | uppercase | capitalize*/
+            }
+            /* Que contenga el valor indicado */
+            [id*="css"]{
+                color: green;
+            }
+
+            /* Que inicie con */
+            [id^="html"]{
+                font-style: italic;
+            }
+
+            /* Que finalice con*/
+            [id$="Java"]{
+                text-transform: capitalize;
+            }
+            [atr="atrValor"]{
+                font-size: 35px;
+            }
+        </style>
+</head>
+
+<body>
+    <main>
+        <section id="htmlId" class="html" style="background-color:yellowgreen">
+            <h2>
+                HTML
+            </h2>
+            <p>
+                Lorem ipsum dolor 
+            </p>
+        </section>
+        <section class="css" id="cssId" atr="atrValor">
+            <h3>
+                CSS
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam perspiciatis dignissimos quis ullam ut
+                eos, placeat, aliquam deleniti ducimus ipsam, minus quaerat iste quas quam porro. Odit dolor beatae
+                consequatur.
+            </p>
+        </section>
+        <section id="JSId">
+            <h3>
+                JS
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam perspiciatis dignissimos quis ullam ut
+                eos, placeat, aliquam deleniti ducimus ipsam, minus quaerat iste quas quam porro. Odit dolor beatae
+                consequatur.
+            </p>
+        </section>
+        <section id="Java">
+            <h3>
+                JS
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam perspiciatis dignissimos quis ullam ut
+                eos, placeat, aliquam deleniti ducimus ipsam, minus quaerat iste quas quam porro. Odit dolor beatae
+                consequatur.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

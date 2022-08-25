@@ -1,0 +1,42 @@
+p{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+section{
+    background-color: red;
+}
+
+.html{
+    background-color: aqua;
+}
+
+main section.html{
+    background-color: yellow !important;
+}
+
+
+/* El padding es la separacion se que tiene el elemento hijo con respecto a su padre */
+#htmlId{
+    background-color: magenta;
+    width: 300px;
+    height: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+/* 
+Especificidad:
+1) !important
+2) inline
+3) class
+4) etiqueta
+
+*/
