@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Selector Hijo */
+        p > strong{
+            color: red;
+        }
+
+        div > img{
+            width: 300px;
+        }
+
+        div.div1 p{
+            font-size: 15px;
+        }
+
+        /* Hermanos adyacentes */
+        h1 + p{
+            font-weight: bolder;
+        }
+        /* hermanos generales */
+        h2 ~ p{
+            height:30px;
+            background-color:aqua;
+        } 
+
+        /* Pesudoclases */
+        a:visited{
+            color: brown;
+        }
+        a:active{
+            color: turquoise;
+        }
+        h1:hover{
+            font-family: Verdana;
+        }
+        img:hover{
+            width: 310px;
+            border: 5px solid yellow;
+        }
+        input:checked{
+            margin: 10px;
+        }
+        div.primerHijo {
+            padding-bottom: 25px;
+            text-align: center;
+        }
+        div.primerHijo p{
+            display: inline;
+        }
+        /* first child */
+        div.primerHijo p:first-child{
+            color: blueviolet;
+            font-size:20px;
+            font-weight:bold;
+        }
+        div.primerHijo p:last-child{
+            color: red;
+            font-size:20px;
+            font-weight:bold;
+        }
+        ol li:nth-child(even){
+            color: orange;
+        }
+        </style>
+</head>
+<body>
+    <p>
+        Selector de hijos Padre > HIJO
+    </p>
+    <P>
+        texto <strong>texto strong</strong> sigue el texto
+    </P>
+    <div class="div1">
+        <img src="./perfil.JPG" alt="">
+        <p>Parrafo</p>
+        <p>Parrafo</p>
+        <p>Parrafo</p>
+    </div>
+
+    <div>
+        <h1>Hermanos Adyacentes</h1>
+        <p>texto 1</p>
+        <p>texto 2</p>
+        <p>texto 3</p>
+    </div>
+
+    <div>
+        <h2>Hermanos generales</h2>
+        <p>hermano 1 de h2</p>
+        <p>hermano 2 de h2</p>
+    </div>
+
+    <ul>
+        <li>
+            <a href="http://www.google.com.ar" target="_blank">Google</a>
+        </li>
+        <li>
+            <a href="http://www.facebook.com" target="_blank">Facebook</a>
+        </li>
+    </ul>
+    <input type="checkbox">
+
+    <!-- First child -->
+    <div class="primerHijo">
+        <p>
+            p1
+        </p>
+        <p>
+            p2
+        </p>
+        <p>
+            p3
+        </p>
+        <p>
+            p4
+        </p>
+    </div>
+    <ol>
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+        <li>cuarto</li>
+        <li>Quinto</li>
+        <li>Sexto</li>
+        <li>Septimo</li>
+        <li>Octavo</li>
+    </ol>
+</body>
+</html>
