@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: aqua;
+    padding: 5px;
+}
+
+.container div{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color:beige;
+}
+
+/* Felx */
+.container-flex{
+    display: flex;
+    background-color: coral;
+    padding: 5px;
+    justify-content: center; /*center-end-start son los posibles valores*/
+    flex-direction: row;
+    height:500px;
+    width: 100%;
+    flex-wrap: wrap; /*nowrap *si el contenido supera el tamaño del container, se achica*/
+    /*wrap si el contenido super el tamaño del containe, bajan a la proxima linea*/
+    align-items: center;
+}
+
+.container-flex div{
+    margin: 2px;
+    width: 100px;
+    height: 100px;
+    background-color:green;
+}
+
+.flex-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* media query, sirve para cambiar estilos a determinadas resoluciones */
+
+@media screen and (max-width:600px){
+    .container-flex{
+        flex-direction: column;
+        
+    }
+}
+
+section{
+    height:650px;
+    display:flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+}
+
+section img{
+    width: 40%;
+}
+
+.context-text {
+    padding: 5px;
+    margin: 10px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Aplico los gradientes */
+section:first-child{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+section:nth-child(2){
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+
+section:last-child{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+section a{
+    display: inline-block;
+    width:70px;
+    height:30px;
+    color: white;
+    background-color: teal;
+    text-decoration: none;
+    border-radius:10px;
+    text-align: center;
+    line-height:25px;
+}
+
+section a:hover{
+    font-weight: bold;
+}
+
+section a:active{
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 1000px){
+    section{
+        flex-direction: column;
+    }
+}
