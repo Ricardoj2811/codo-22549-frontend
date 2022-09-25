@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navBarColor{
+    background-color: grey;
+}
+
+
+.navBar img{
+    height: 50px;
+    width: 80px;
+}
+
+.navbar-brand{
+    color: white !important;
+}
+
+.nav-link:hover{
+    color: white !important;
+}
+
+.verde{
+    color: green !important;
+}
+
+.blanco{
+    color: white !important;
+}
+.card{
+    width: 300px;
+}
+#banner{
+    background-image: url("../assets/ba1.jpg");
+    filter: brightness(80%);
+    height:600px;
+    width:100%;
+}
+
+.contenidoBanner{
+    width:500px;
+    text-align: right;
+    margin-right: 6rem;
+    color: white;
+}
+
+.lugar img{
+    height:300px;
+    width:100%;
+}
+
+#footer{
+    background-color:rgb(48, 81, 143);
+}
+
+#footer ul li{
+    list-style: none;
+    display: inline-block;
+}
+.formulario{
+    max-width: 700px;
+}
