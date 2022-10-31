@@ -39,7 +39,7 @@
                                 <a class="nav-link" href="#orador">Conviétete en orador</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link verde" href="">Comprar tickets</a>
+                                <a class="nav-link verde" onclick="comprarTickects()" href="#comprarTickets">Comprar tickets</a>
                             </li>
                         </ul>
                     </div>
@@ -47,7 +47,7 @@
             </nav>
         </div>
     </header>
-    <section>
+    <section id="principal">
         <div id="banner" class="row align-items-center justify-content-end p-0 m-0">
             <div class="contenidoBanner">
                 <h1 class="col-12">Conf Bs As</h1>
@@ -56,7 +56,7 @@
                     a conocer a miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel
                     que tenemos para ti. Te esperamos!</p>
                 <a href="#orador" class="btn btn-outline-light">Quiero ser orador</a>
-                <button class="btn btn-success">Comprar tickets</button>
+                <button class="btn btn-success" type="button" onclick="comprarTickects()" href="#comprarTickets">Comprar tickets</button>
             </div>
     </section>
     <section id="oradores">
@@ -98,7 +98,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="bsAs">
         <div class="row container-fluid m-0 p-0 lugar my-4">
             <div class="col-sm-6 p-0 border border-light">
                 <img src="./assets/honolulu.jpg" alt="">
@@ -122,18 +122,27 @@
         </div>
         <form class="formulario container-fluid">
             <div class="mb-3 text-center">
-                <label for="exampleInputEmail1" class="form-label">Anótate como orador para dar un charla ignite. Cuéntanos de qué quieres hablar!</label>
+                <label for="exampleInputEmail1" class="form-label">Anótate como orador para dar un charla ignite.
+                    Cuéntanos de qué quieres hablar!</label>
                 <div class="d-flex">
-                    <input type="email" class="form-control me-5" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Apellido">
+                    <input type="email" class="form-control me-5" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Nombre">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Apellido">
                 </div>
             </div>
             <div class="mb-3">
-                <textarea cols="30" rows="6" class="form-control" id="exampleInputPassword1" placeholder="Sobre qué quieres hanlar?"></textarea>
-                <label class="form-check-label" for="exampleInputPassword1">Recuerda incluir un título para la charla</label>
+                <textarea cols="30" rows="6" class="form-control" id="exampleInputPassword1"
+                    placeholder="Sobre qué quieres hanlar?"></textarea>
+                <label class="form-check-label" for="exampleInputPassword1">Recuerda incluir un título para la
+                    charla</label>
             </div>
             <button type="submit" class="btn btn-success w-100 mb-3">Enviar</button>
         </form>
+    </section>
+
+    <section id="comprarTickets" class="pt-5">
+        <!-- Agregado desde el JS -->
     </section>
 
     <footer>
@@ -169,6 +178,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="./js/compraTickets.js"></script>
 </body>
 
 </html>

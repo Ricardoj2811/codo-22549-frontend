@@ -62,3 +62,13 @@
 .formulario{
     max-width: 700px;
 }
+
+.descuentos{
+    height: 160px;
+    width: 220px;
+}
+
+.totalAPagar{
+    background-color:#9ec7db;
+    height: 40px;
+}
